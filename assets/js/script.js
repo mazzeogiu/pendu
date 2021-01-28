@@ -23,13 +23,18 @@ function loadDoc() {
             });
 
             letter.addEventListener('click', function(){
-                screenWord = '';
+                screenWord = word;
+                document.getElementById("word").innerHTML = screenWord;
                 letters.push(letter.value);
                 //non funziona ancora
-                for (let c = 0; c < word.length; c++) {
-                    screenWord += letters.includes(word[c]) ? letter.value : '_';
-                    console.log(letters);
-                }
+                
+                    for (let c = 0; c < word.length; c++) {
+                        if (!letters.includes(word[c])) {
+                            screenWord = word.replace(word[c], '_');
+                        }
+                        //screenWord = letters.includes(word[c]) ?  word.replace(word[c], word[c]): word.replace(word[c], '_');
+                        console.log(letters);
+                    }
                 document.getElementById("word").innerHTML = screenWord;
             });
         }
