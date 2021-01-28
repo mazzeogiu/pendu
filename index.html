@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="description" content="Pendu">
         <meta name="author" content="Giuseppe Mazzeo">
-        <meta name="viewport" content="width=device-width, initia-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jeu du Pendu</title>
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
@@ -12,7 +12,9 @@
         <div class="container">
             <h1>Jeu du Pendu</h1>
             <div>
-                <canvas></canvas>
+                <svg id="svg">
+                    
+                </svg>
             </div>
             <div>
                 <p id="word"></p>
@@ -45,9 +47,10 @@
                     <option value="y">y</option>
                     <option value="z">z</option>
                 </select>
-                <label for="solution">Solution</label>
+                <br>
+                <label for="solution">Votre solution</label>
                 <input id="solution" type="text" aria-label="Solution" name="solution">
-                <button id="btn">test</button>
+                <button id="btn">Verifier</button>
             </div>
         </div>
         <script src="assets/js/script.js"></script>

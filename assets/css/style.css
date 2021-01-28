@@ -1,4 +1,22 @@
+body {
+    background-color: #cccccc;
+}
+.container {
+    margin: auto;
+    max-width: 900px;
+    text-align: center;
+}
+#svg {
+    width: 300px;
+    height: 400px;
+}
 #word {
     letter-spacing: 4px;
     font-size: 2em;
+}
+#letter {
+    margin-bottom: 100px;
+}
+#solution {
+    margin-top: 100px;
 }
