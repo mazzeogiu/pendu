@@ -1,58 +1,39 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Pendu">
-        <meta name="author" content="Giuseppe Mazzeo">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jeu du Pendu</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <h1>Jeu du Pendu</h1>
-            <div>
-                <svg id="svg">
-                    
-                </svg>
-            </div>
-            <div>
-                <p id="word"></p>
-                <select name="letter" id="letter">
-                    <option value="" selected>Selectionner une lettre</option>
-                    <option value="a">a</option>
-                    <option value="b">b</option>
-                    <option value="c">c</option>
-                    <option value="d">d</option>
-                    <option value="e">e</option>
-                    <option value="f">f</option>
-                    <option value="g">g</option>
-                    <option value="h">h</option>
-                    <option value="i">i</option>
-                    <option value="j">j</option>
-                    <option value="k">k</option>
-                    <option value="l">l</option>
-                    <option value="m">m</option>
-                    <option value="n">n</option>
-                    <option value="o">o</option>
-                    <option value="p">p</option>
-                    <option value="q">q</option>
-                    <option value="r">r</option>
-                    <option value="s">s</option>
-                    <option value="t">t</option>
-                    <option value="u">u</option>
-                    <option value="v">v</option>
-                    <option value="w">w</option>
-                    <option value="x">x</option>
-                    <option value="y">y</option>
-                    <option value="z">z</option>
-                </select>
-                <br>
-                <label for="solution">Votre solution</label>
-                <input id="solution" type="text" aria-label="Solution" name="solution">
-                <button id="btn">Verifier</button>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Pendu">
+    <meta name="author" content="Giuseppe Mazzeo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du Pendu</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jeu du Pendu</h1>
+        <div>
+            <svg id="svg"></svg>
+        </div>
+        <div>
+            <p id="word"></p>
+            <select name="letter" id="letter">
+            </select>
+            <br>
+            <label for="solution">Votre solution</label>
+            <input id="solution" type="text" aria-label="Solution" name="solution">
+            <button id="btn">Verifier</button>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p id="textModal"></p>
+                <button id ="btnModal">Recommencer</button>
             </div>
         </div>
-        <script src="assets/js/script.js"></script>
-    </body>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
 </html>
